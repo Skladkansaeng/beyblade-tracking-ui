@@ -192,7 +192,7 @@ export default function VideoProcessor() {
 
             {selectedFile && (
               <div className="bg-gray-50 rounded-lg p-4">
-                <div className="flex items-center justify-between">
+                <div className="flex flex-col sm:flex-row gap-8 items-center justify-between">
                   <div>
                     <p className="font-medium text-gray-900">
                       {selectedFile.name}
@@ -201,7 +201,7 @@ export default function VideoProcessor() {
                       {(selectedFile.size / (1024 * 1024)).toFixed(2)} MB
                     </p>
                   </div>
-                  <div className="flex gap-2">
+                  <div className="flex gap-2 flex-col sm:flex-row ">
                     <Button
                       onClick={handleUpload}
                       disabled={
