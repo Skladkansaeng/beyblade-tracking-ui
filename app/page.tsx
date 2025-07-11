@@ -70,7 +70,7 @@ export default function VideoProcessor() {
 
       // Upload directly to external API with progress tracking
       const uploadResponse = await axios.post(
-        "/api/beyblade-detection",
+        "https://yolo-beyblade.easyrice.tech/beyblade-detection",
         formData,
         {
           headers: {
